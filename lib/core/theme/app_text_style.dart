@@ -6,25 +6,40 @@ import 'package:greenify_app/core/theme/font_weight_helper.dart';
 class AppTextStyle {
   static TextStyle font14WhiteMedium = TextStyle(
     fontSize: 14.sp,
-    color: Colors.white,
+    color: AppColor.white,
     fontWeight: FontWeightHelper.medium,
   );
 
-   static TextStyle font16WhiteMedium = TextStyle(
+  static TextStyle font16WhiteMedium = TextStyle(
     fontSize: 16.sp,
-    color: Colors.white,
+    color: AppColor.white,
     fontWeight: FontWeightHelper.medium,
   );
 
+  static TextStyle font18WhiteRegular = TextStyle(
+    fontSize: 18.sp,
+    color: AppColor.white.withOpacity(0.77),
+    fontWeight: FontWeightHelper.regular,
+  );
   static TextStyle font20WhiteMedium = TextStyle(
     fontSize: 20.sp,
-    color: Colors.white,
+    color: AppColor.white,
     fontWeight: FontWeightHelper.medium,
   );
   static TextStyle font37WhiteBold = TextStyle(
     fontSize: 37.sp,
-    color: Colors.white,
+    color: AppColor.white,
     fontWeight: FontWeightHelper.bold,
+  );
+  static TextStyle font35DarkGreenRegular = TextStyle(
+    fontSize: 35.sp,
+    color: AppColor.darkGreen,
+    fontWeight: FontWeightHelper.regular,
+  );
+   static TextStyle font12DarkGreenMedium = TextStyle(
+    fontSize: 12.sp,
+    color: AppColor.darkGreen,
+    fontWeight: FontWeightHelper.medium,
   );
   static TextStyle font14BlackMedium = TextStyle(
     fontSize: 14.sp,
@@ -47,7 +62,7 @@ class AppTextStyle {
     fontWeight: FontWeightHelper.semiBold,
   );
   static TextStyle font16DarkGreenMedium = TextStyle(
-    fontSize: 14.sp,
+    fontSize: 16.sp,
     color: AppColor.darkGreen,
     fontWeight: FontWeightHelper.medium,
   );
