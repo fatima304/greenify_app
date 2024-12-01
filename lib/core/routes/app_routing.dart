@@ -15,7 +15,7 @@ class AppRouting {
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen(),
         );
-         case Routes.registerScreen:
+      case Routes.registerScreen:
         return MaterialPageRoute(
           builder: (_) => const RegisterScreen(),
         );
