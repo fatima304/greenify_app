@@ -19,11 +19,14 @@ class RegisterBody extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
         ),
-        Column(
-          children: [
-            welcomeText(),
-            const Expanded(child: RegisterSection()),
-          ],
+        SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              welcomeText(),
+              const RegisterSection(),
+            ],
+          ),
         )
       ],
     );
@@ -31,10 +34,10 @@ class RegisterBody extends StatelessWidget {
 
   Padding welcomeText() {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, bottom: 16, top: 32),
+      padding: const EdgeInsets.only(left: 16, bottom: 24, top: 32),
       child: Text(
-        'Welcome\n\nYou are one step away from joining a fantastic community.',
-        style: AppTextStyle.font20WhiteMedium.copyWith(
+        'Welcome\n\nYou are one step away from\njoining a fantastic community.',
+        style: AppTextStyle.font18WhiteRegular.copyWith(
           fontFamily: FontFamilyHelper.montaguSlabFont,
         ),
       ),
