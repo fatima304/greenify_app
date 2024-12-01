@@ -14,7 +14,7 @@ class AppRouting {
         return MaterialPageRoute(
           builder: (_) => const OnBoardingScreen(),
         );
-      
+
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
