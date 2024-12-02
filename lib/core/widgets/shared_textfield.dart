@@ -63,6 +63,9 @@ class SharedTextField extends StatelessWidget {
           ),
           obscureText: obscureText,
         ),
+        const SizedBox(
+          height: 10,
+        ),
       ],
     );
   }

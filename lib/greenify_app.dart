@@ -14,7 +14,7 @@ class GreenifyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouting.generateRoute,
-        initialRoute: Routes.registerScreen,
+        initialRoute: Routes.logScreen,
       ),
     );
   }
