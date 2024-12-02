@@ -5,7 +5,10 @@ import 'package:greenify_app/core/widgets/shared_textfield.dart';
 
 class TextfieldPart extends StatelessWidget {
   const TextfieldPart(
-      {super.key, required this.hintText, required this.prefixIcon,   this.labelText});
+      {super.key,
+      required this.hintText,
+      required this.prefixIcon,
+      this.labelText});
 
   final String hintText;
   final String? labelText;
@@ -17,7 +20,7 @@ class TextfieldPart extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-         hintText ,
+          hintText,
           style: AppTextStyle.font16DarkGreenMedium
               .copyWith(fontFamily: FontFamilyHelper.montaguSlabFont),
         ),
@@ -27,9 +30,6 @@ class TextfieldPart extends StatelessWidget {
         SharedTextField(
           hintText: labelText ?? hintText,
           prefixIcon: prefixIcon,
-        ),
-        const SizedBox(
-          height: 10,
         ),
       ],
     );
