@@ -16,7 +16,8 @@ class TextFieldSection extends StatelessWidget {
     return Column(
       children: [
         const RegisterFields(),
-        SharedButton(buttonSize: Size(300, 60),
+        SharedButton(
+          buttonSize: const Size(300, 60),
           buttonColor: AppColor.darkGreen,
           text: Text(
             'Sign Up',
@@ -27,6 +28,7 @@ class TextFieldSection extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
+        // richText(context, 'Already a member? ', 'log in', Routes.logScreen),
         RichText(
           text: TextSpan(
             text: 'Already a member? ',

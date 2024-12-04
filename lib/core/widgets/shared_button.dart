@@ -24,7 +24,7 @@ class SharedButton extends StatelessWidget {
           shape: const WidgetStatePropertyAll(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(15),
+                Radius.circular(20),
               ),
             ),
           ),
