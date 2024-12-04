@@ -9,7 +9,8 @@ class AppColor {
   static const Color darkGreen = Color(0xff416D50);
   static const Color primGreen = Color(0xff0D986A);
   static const Color grey = Color(0xffDDDADA);
-  static const Color lightGrey = Color(0xff575757);
+  static const Color lightGrey = Color(0xffDDDADA);
+  static const Color midGrey = Color(0xff575757);
   static const Color darkGrey = Color(0xff393838);
   static const Color red = Color(0xffF83758);
   static const Color seaweed = Color(0xff1C7791);

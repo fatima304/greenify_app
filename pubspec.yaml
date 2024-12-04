@@ -102,6 +102,17 @@ flutter:
         - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
           weight: 700        
 
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700        
+
     - family: Baskervville
       fonts:
         - asset: assets/fonts/Baskervville/Baskervville-Regular.ttf

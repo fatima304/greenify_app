@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- import 'package:greenify_app/core/routes/app_routing.dart';
+import 'package:greenify_app/core/routes/app_routing.dart';
 import 'core/routes/routes.dart';
 
 class GreenifyApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class GreenifyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouting.generateRoute,
-        initialRoute: Routes.logScreen,
+        initialRoute: Routes.signScreen,
       ),
     );
   }

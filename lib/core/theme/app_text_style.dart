@@ -85,7 +85,7 @@ class AppTextStyle {
   );
   static TextStyle font12LightGreyMedium = TextStyle(
     fontSize: 12.sp,
-    color: AppColor.lightGrey,
+    color: AppColor.midGrey,
     fontWeight: FontWeightHelper.medium,
   );
 
