@@ -5,4 +5,11 @@ class AppImages {
   static const String onBoarding1 = '${AppConstants.imagePath}onBoarding1.png';
   static const String onBoarding2 = '${AppConstants.imagePath}onBoarding2.png';
   static const String onBoarding3 = '${AppConstants.imagePath}onBoarding3.png';
+  static const String register = '${AppConstants.imagePath}register.png';
+  static const String signup = '${AppConstants.imagePath}seeding.png';
+
+
+
+
+ 
 }

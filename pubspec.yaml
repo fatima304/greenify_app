@@ -74,6 +74,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -90,15 +91,72 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+          weight: 300
         - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
-        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
-          weight: 700
+          weight: 400
         - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
           weight: 500
         - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700        
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
           weight: 300
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700        
+
+    - family: Baskervville
+      fonts:
+        - asset: assets/fonts/Baskervville/Baskervville-Regular.ttf
+          weight: 400
+
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Lato/Lato-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato/Lato-Bold.ttf
+          weight: 700
+        
+
+    - family: Montaga
+      fonts:
+        - asset: assets/fonts/Montaga/Montaga-Regular.ttf
+          weight: 400
+
+    - family: MontaguSlab
+      fonts:
+        - asset: assets/fonts/Montagu_Slab/MontaguSlab_24pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montagu_Slab/MontaguSlab_24pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montagu_Slab/MontaguSlab_24pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montagu_Slab/MontaguSlab_24pt-Bold.ttf
+          weight: 700   
+
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter/Inter_18pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter/Inter_18pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter/Inter_28pt-Bold.ttf
+          weight: 700        
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
