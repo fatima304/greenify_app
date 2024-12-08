@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greenify_app/core/routes/routes.dart';
 import 'package:greenify_app/features/on_boarding/data/onboarding_model.dart';
 import 'package:greenify_app/features/on_boarding/presentation/screen/widgets/dots_indicator.dart';
 import 'package:greenify_app/features/on_boarding/presentation/screen/widgets/onboarding_page.dart';
@@ -44,8 +45,8 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
               isLastPage: index == onboardingPages.length - 1,
               onNext: _goToNextPage,
               onButtonPressed: index == onboardingPages.length - 1
-                  ? () {
-                       Navigator.pushReplacementNamed(context, '/home');
+                   ? () {
+                       Navigator.pushNamed(context, Routes.registerScreen);
                     }
                   : null,
             );
