@@ -33,7 +33,7 @@ class FooterPart extends StatelessWidget {
           height: 30,
         ),
         richText(
-            context, 'Already have an account ', 'Log in', Routes.signScreen),
+            context, 'Already have an account ', 'Log in', Routes.logScreen),
       ],
     );
   }
