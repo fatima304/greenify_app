@@ -56,6 +56,11 @@ class AppTextStyle {
     color: AppColor.primGreen,
     fontWeight: FontWeightHelper.semiBold,
   );
+   static TextStyle font30DarkGreenSemiBold = TextStyle(
+    fontSize: 30.sp,
+    color: AppColor.darkGreen,
+    fontWeight: FontWeightHelper.semiBold,
+  );
   static TextStyle font20BlackMedium = TextStyle(
     fontSize: 20.sp,
     color: AppColor.black,

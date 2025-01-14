@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:greenify_app/core/routes/routes.dart';
 import 'package:greenify_app/features/login/presentation/screen/ui/login_screen.dart';
+import 'package:greenify_app/features/otp/presentation/screen/ui/otp_screen.dart';
 import 'package:greenify_app/features/register/presentation/screen/ui/register_screen.dart';
 import 'package:greenify_app/features/signup/presentation/screen/ui/signup_screen.dart';
 import 'package:greenify_app/features/splash/presentation/screen/ui/splash_screen.dart';
@@ -28,6 +29,10 @@ class AppRouting {
       case Routes.signScreen:
         return MaterialPageRoute(
           builder: (_) => const SignUpScreen(),
+        );
+       case Routes.otpScreen:
+        return MaterialPageRoute(
+          builder: (_) => const OtpScreen(),
         );
       default:
         return MaterialPageRoute(
