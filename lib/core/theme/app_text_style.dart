@@ -56,6 +56,11 @@ class AppTextStyle {
     color: AppColor.primGreen,
     fontWeight: FontWeightHelper.semiBold,
   );
+  static TextStyle font28DarkGreenSemiBold = TextStyle(
+    fontSize: 28.sp,
+    color: AppColor.darkGreen,
+    fontWeight: FontWeightHelper.semiBold,
+  );
   static TextStyle font20BlackMedium = TextStyle(
     fontSize: 20.sp,
     color: AppColor.black,
@@ -83,15 +88,11 @@ class AppTextStyle {
     color: AppColor.red,
     fontWeight: FontWeightHelper.regular,
   );
-  static TextStyle font12LightGreyMedium = TextStyle(
+  static TextStyle font12MidGreyMedium = TextStyle(
     fontSize: 12.sp,
     color: AppColor.midGrey,
     fontWeight: FontWeightHelper.medium,
   );
 
-  static TextStyle font16LightGreySemiBold = TextStyle(
-    fontSize: 16.sp,
-    color: AppColor.darkGrey,
-    fontWeight: FontWeightHelper.semiBold,
-  );
+
 }

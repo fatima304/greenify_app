@@ -32,7 +32,7 @@ class SharedTextField extends StatelessWidget {
           onTap: onTap,
           decoration: InputDecoration(
             filled: true,
-            fillColor: AppColor.lightGreen,
+            fillColor: AppColor.lightGrey,
             hintText: hintText,
             hintStyle: AppTextStyle.font18DarkGreenRegular.copyWith(
               fontSize: 17.5,
@@ -53,7 +53,7 @@ class SharedTextField extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: const BorderSide(color: AppColor.lightGreen),
+              borderSide: const BorderSide(color: AppColor.lightGrey),
               borderRadius: BorderRadius.circular(12),
             ),
             errorBorder: OutlineInputBorder(

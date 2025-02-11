@@ -18,7 +18,7 @@ class AuthSection extends StatelessWidget {
         ),
         Text(
           '- OR Continue with -',
-          style: AppTextStyle.font12LightGreyMedium
+          style: AppTextStyle.font12MidGreyMedium
               .copyWith(fontFamily: FontFamilyHelper.latoFont),
         ),
         const SizedBox(

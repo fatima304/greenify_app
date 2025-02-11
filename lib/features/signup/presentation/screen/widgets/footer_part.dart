@@ -22,6 +22,9 @@ class FooterPart extends StatelessWidget {
           height: 40,
         ),
         SharedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.otpVerifyScreen);
+          },
           text: Text(
             'Sign up with Password',
             style: AppTextStyle.font14WhiteMedium
@@ -33,7 +36,7 @@ class FooterPart extends StatelessWidget {
           height: 30,
         ),
         richText(
-            context, 'Already have an account ', 'Log in', Routes.signScreen),
+            context, 'Already have an account ', 'Log in', Routes.logScreen),
       ],
     );
   }
