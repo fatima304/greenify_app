@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:greenify_app/core/constants/app_lottie.dart';
+
 import 'package:lottie/lottie.dart';
 
-import '../helper/app_lottie.dart';
 import '../theme/app_color.dart';
 import '../theme/app_text_style.dart';
 
@@ -11,17 +11,17 @@ void errorDialog(BuildContext context, String error) {
     context: context,
     builder: (context) => Dialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20.r),
+        borderRadius: BorderRadius.circular(20),
       ),
       elevation: 1.5,
       backgroundColor: Colors.white,
       child: Container(
-        width: 450.w,
-        height: 400.h,
+        width: 450,
+        height: 400,
         decoration: BoxDecoration(
             color: Colors.white,
             shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.circular(20.r),
+            borderRadius: BorderRadius.circular(20),
             boxShadow: const [
               BoxShadow(
                   color: Colors.black26, offset: Offset(15, 15), blurRadius: 3),
@@ -30,30 +30,30 @@ void errorDialog(BuildContext context, String error) {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Lottie.asset(AppLottie.error, width: 200.w, height: 150.h),
-            SizedBox(
-              height: 15.h,
+            Lottie.asset(AppLottie.error, width: 20, height: 150),
+            const SizedBox(
+              height: 15,
             ),
             Text(error,
                 maxLines: 3,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
                 style: AppTextStyle.font14WhiteMedium),
-            SizedBox(
-              height: 15.h,
+            const SizedBox(
+              height: 15,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12.w),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: SizedBox(
                 width: double.infinity,
                 child: TextButton(
                   style: TextButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16.r),
+                      borderRadius: BorderRadius.circular(16),
                     ),
                     backgroundColor: AppColor.darkGreen,
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 25.w,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 25,
                     ),
                   ),
                   onPressed: () {

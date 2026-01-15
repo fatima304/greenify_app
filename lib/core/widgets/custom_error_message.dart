@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theme/app_text_style.dart';
 
@@ -14,9 +13,9 @@ class CustomMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
+        padding: EdgeInsets.symmetric(horizontal: 18, vertical: 10),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12.r),
+          borderRadius: BorderRadius.circular(12),
           color: backgroundColor ?? Colors.red,
         ),
         child: Text(

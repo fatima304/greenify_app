@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:greenify_app/core/routes/routes.dart';
 import 'package:greenify_app/features/login/presentation/screen/ui/login_screen.dart';
-import 'package:greenify_app/features/otp/presentation/screen/ui/otp_code_screen.dart';
-import 'package:greenify_app/features/otp/presentation/screen/ui/otp_success_screen.dart';
-import 'package:greenify_app/features/otp/presentation/screen/ui/otp_verfication_screen.dart';
+import 'package:greenify_app/features/otp/presentation/screen/otp_code_screen.dart';
+import 'package:greenify_app/features/otp/presentation/screen/otp_success_screen.dart';
+import 'package:greenify_app/features/otp/presentation/screen/otp_verfication_screen.dart';
 import 'package:greenify_app/features/register/presentation/screen/ui/register_screen.dart';
 import 'package:greenify_app/features/signup/presentation/screen/ui/signup_screen.dart';
 import 'package:greenify_app/features/splash/presentation/screen/ui/splash_screen.dart';

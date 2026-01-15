@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:greenify_app/core/theme/app_color.dart';
 import 'package:greenify_app/core/theme/app_text_style.dart';
-import 'package:greenify_app/core/helper/app_constants.dart';
+import 'package:greenify_app/core/constants/app_constants.dart';
 import 'package:greenify_app/core/theme/font_family_helper.dart';
 
 class SocialWidget extends StatelessWidget {

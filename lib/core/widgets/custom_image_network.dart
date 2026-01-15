@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../helper/app_images.dart';
+import 'package:greenify_app/core/constants/app_images.dart';
 
 class CustomImageNetwork extends StatelessWidget {
   const CustomImageNetwork({super.key, required this.imagePath, this.width, this.height, this.fit});
@@ -14,14 +12,14 @@ class CustomImageNetwork extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       imagePath ?? AppImages.logo,
-      width: width ?? 67.w,
-      height: height ?? 70.h,
+      width: width ?? 67,
+      height: height ?? 70,
       fit: fit ?? BoxFit.cover,
       errorBuilder: (context, error, stackTrace) {
         return Image.network(
           AppImages.logo,
-          width: width ?? 67.w,
-          height: height ?? 70.h,
+          width: width ?? 67,
+          height: height ?? 70,
           fit: fit?? BoxFit.cover,
         );
       },

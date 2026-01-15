@@ -1,4 +1,4 @@
-import 'package:greenify_app/core/helper/app_constants.dart';
+import 'package:greenify_app/core/constants/app_constants.dart';
 
 class AppImages {
   static const String logo = '${AppConstants.imagePath}logo.png';

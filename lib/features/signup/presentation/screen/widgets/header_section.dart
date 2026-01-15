@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greenify_app/core/helper/app_images.dart';
+import 'package:greenify_app/core/constants/app_images.dart';
 import 'package:greenify_app/core/theme/app_text_style.dart';
 import 'package:greenify_app/core/theme/font_family_helper.dart';
 
