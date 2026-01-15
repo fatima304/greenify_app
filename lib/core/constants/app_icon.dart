@@ -1,6 +1,6 @@
-import 'package:greenify_app/core/helper/app_constants.dart';
+import 'package:greenify_app/core/constants/app_constants.dart';
 
-class AppIcon{
+class AppIcon {
   static const String saveMark = '${AppConstants.svgPath}save_mark.svg';
   static const String dotePoint = '${AppConstants.svgPath}point.svg';
   static const String face = '${AppConstants.iconPath}face.png';

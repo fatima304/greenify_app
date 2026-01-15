@@ -1,0 +1,1150 @@
+{
+	"info": {
+		"_postman_id": "2bf0d5ec-fbb4-45b1-ac7f-7c3b8d0dabfa",
+		"name": "Green",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24388476"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"ali allam\",\r\n    \"email\":\"allam98.ali@gmail.com\",\r\n    \"password\":\"123456\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/auth/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"auth",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign-in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"allam98.ali@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/sign-in",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"sign-in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign-out",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/sign-out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"sign-out"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm-email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"allam98.ali@gmail.com\",\r\n    \"otp\":\"87182a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/auth/confirm-email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"auth",
+								"confirm-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check Email Exists And Send Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/send-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check Is Otp Valid",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"\",\r\n    \"otp\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/check-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"check-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"allam98.ali@gmail.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/forget-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"allam98.ali@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"otp\":\"496245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/auth/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"\",\r\n    \"newPassword\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/change-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blogs",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Documents/New folder (2)/41Glwnb+i9L._AC_SX679_.jpg"
+								},
+								{
+									"key": "title",
+									"value": "This is a Sample Blog Post",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A brief summary of the blog post to attract readers.",
+									"type": "text"
+								},
+								{
+									"key": "coverImageUrl",
+									"value": "https://example.com/alternative-cover-image.jpg",
+									"type": "text"
+								},
+								{
+									"key": "sections[0][title]",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "sections[0][content]",
+									"value": "testing",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/blogs/6678eb629ac291b9d834d354",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"blogs",
+								"6678eb629ac291b9d834d354"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mainCategory",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjY0MDE0NzYsImV4cCI6MTcyNzAwNjI3Nn0.MXQoBev7g0GgJRids2fc3pxtPRbcX9YLGfLrZ4QDQ2w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjY0MDE0NzYsImV4cCI6MTcyNzAwNjI3Nn0.MXQoBev7g0GgJRids2fc3pxtPRbcX9YLGfLrZ4QDQ2w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Large-Scale Farming\",\r\n    \"description\":\"description\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subCategory",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sub-category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Soil",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/soil",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"soil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/soil/66ddc21f3c0bdc7c142c652a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"soil",
+								"66ddc21f3c0bdc7c142c652a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by categoryid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/soil/category/6677fedb26b80e570d1d8fc5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"soil",
+								"category",
+								"6677fedb26b80e570d1d8fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "tesing2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/10.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/soil/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"soil",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "tesing update",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/8e8b2931c8f9bd2811621ca75759477e.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/soil/66ddc21f3c0bdc7c142c652a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"soil",
+								"66ddc21f3c0bdc7c142c652a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "tesing2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/10.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/soil/6677fedb26b80e570d1d8fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"soil",
+								"6677fedb26b80e570d1d8fc5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "waterAndFertilizer",
+			"item": [
+				{
+					"name": "get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/water-fertilizer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"water-fertilizer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/water-fertilizer/66e06cd0408196e695069fef",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"water-fertilizer",
+								"66e06cd0408196e695069fef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by categoryid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/water-fertilizer/category/6677fedb26b80e570d1d8fc5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"water-fertilizer",
+								"category",
+								"6677fedb26b80e570d1d8fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "two",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/580b585b2edbce24c47b2c8c-263x300.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/water-fertilizer/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"water-fertilizer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "tesing update",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/8e8b2931c8f9bd2811621ca75759477e.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/water-fertilizer/66e06c29408196e695069fde",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"water-fertilizer",
+								"66e06c29408196e695069fde"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4MDkwMDYsImV4cCI6MTcyNjQxMzgwNn0.YmVeVaL_XD8JhU9mnB-0vLvhfLXCKAAuGSTp4l60rkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "tesing2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tesing",
+									"type": "text"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Ali/Pictures/10.png"
+								},
+								{
+									"key": "categoryId",
+									"value": "6677fedb26b80e570d1d8fc5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/water-fertilizer/6677fedb26b80e570d1d8fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"water-fertilizer",
+								"6677fedb26b80e570d1d8fc5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "plants",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plant",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by category id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plant/category/6677fedb26b80e570d1d8fc5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plant",
+								"category",
+								"6677fedb26b80e570d1d8fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjY0Nzk0ODcsImV4cCI6MTcyNzA4NDI4N30.7UiAGjasFsyUxCf-blpW8SLP_h02sDpCtsawqdHVG7I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Orange\",\r\n\"description\":\"البرتقال هو أحد أشهر الفواكه الحمضية وأكثرها زراعة في العالم، ويمتاز بطعمه اللذيذ وفوائده الصحية العديدة\",\r\n\"benefits\":[\"فيتامين C: يحتوي البرتقال على نسبة عالية من فيتامين C، الذي يعزز الجهاز المناعي\",\"الألياف: يساعد في تحسين الهضم وتقليل مستويات الكوليسترول\",\"مضادات الأكسدة: تحتوي على مضادات الأكسدة التي تساعد في مكافحة الأمراض المزمنة\"],\r\n\"types\":[\r\n    {\r\n        \"title\":\"السكري\"\r\n        },\r\n        {\r\n            \"title\":\"البلدي\"},{\"title\":\"الحامض او ابو سرة \"},{\"title\":\"البرتقال الاحمر \"},{\"title\":\" البرتقال البري \"}],\r\n\"CultivationMethods\":\"يوجد طريقتان  طرق الاولي عن طريق البذور تأخذ البذور من الثمرة ووتضع في اصيص صغيرة به تربة بيتموس او تربة مخصصة للبذور والشتلات الطريقة الثانية وهي التجذير وله نوعان او طريقتان الاولي هي التجيز بالعقل عن طريق اخذ عقلة من الشجرة بطول 20 الي 30 سم تكون خضراء او من التفرعات الجديدة يتم وضعها في مواد محفذة للانبات مثل القرفة او العسل او صبار الالوفيرا ثم تغرس في التربة ويتم الري عند الجفاف وري خفيفان الطريقة الثانية هي التجذير الهوائي وهي عن طريق اختيار الفرع المناسب ثم تقشيرخ برفق ثم تغطية جزء منه بالطين المبلل بالماء ثم الاغلاق عليه تماما ومنع اي مصدر هواء دون الفصل عن الشجرة ونفحصه بعد شهر واو 40 يوم لو تم التجذير نقوم بقصه ونقله للتربة وان فشل فيبقي كما هو علي الشجرة الان اصبحت الشتلات جاهزة  \",\r\n\"basics_of_agricultural_success\":[\r\n    {\"title\":\"المناخ\",\r\n    \"description\":[\r\n        \"درجة الحرارة: البرتقال يفضل المناخ الدافئ والمعتدل. ينمو بشكل جيد في درجات حرارة تتراوح بين 15-30 درجة مئوية\",\"التعرض للشمس: يحتاج البرتقال إلى مكان يتعرض لأشعة الشمس المباشرة لمدة لا تقل عن 6-8 ساعات يوميًا\"\r\n        ]\r\n        }\r\n        ],\r\n        \"CultivationSteps\":[\r\n            {\r\n                \"title\":\"اختيار الشتلات\",\r\n                \"description\":[\r\n                    \"حفر حفرة بعمق 50-60 سم وعرض 50 سم.\",\"ملء الحفرة بخليط من التربة والسماد العضوي.\"\r\n                    ]\r\n                    },\r\n                    {\r\n                        \"title\":\"تحضير الموقع\",\r\n                        \"description\":[\r\n                            \"حفر حفرة بعمق 50-60 سم وعرض 50 سم.\",\"ملء الحفرة بخليط من التربة والسماد العضوي.\"\r\n                            ]\r\n                            },\r\n                            {\r\n                                \"title\":\"زراعة الشتلات\",\r\n                                \"description\":[\r\n                                    \"وضع الشتلة في الحفرة وملء التربة حول الجذور مع الضغط\",\"ري الشتلة جيدًا بعد الزراعة\"\r\n                                    ]\r\n                                    }\r\n                                    ],\r\n                                    \"categoryId\":\"66dcd835f0feeff110348a3d\",\r\n                                    \"subCategoryId\":\"667812944283bb9167229f4a\"\r\n                                    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/plant",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plant"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/user/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/api/user/soft-delete/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"user",
+								"soft-delete",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favorites",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjYwOTMyNTIsImV4cCI6MTcyNjY5ODA1Mn0.3mlwo3RjOKkovw-zIKM5kwsRzF3D8_grXgocM2kCsPY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"plants\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/favorite/66dce18076ed68e874a3a5ew",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"favorite",
+								"66dce18076ed68e874a3a5ew"
+							]
+						},
+						"description": "StartFragmentAdds a new item to the authenticated user's favorites. You can add items of different types (plants, soils, water & fertilizers, and products) to their respective lists within their favorites.EndFragment\n\nStartFragment\n\n**Response:**\n\n- **Status:**\n    \n    - 200 (OK): Success\n        \n    - 400 (Bad Request): Maximum document count exceeded or invalid request body\n        \n    - 404 (Not Found): User favorites not found for the authenticated user\n        \n    - 409 (Conflict): Item already exists in the user's favorites for the specified type\n        \n\nEndFragment  \n  \nSuccess Response Ex.\n\n<img src=\"https://content.pstmn.io/1ec3efc3-b95c-40ee-92b1-730ed217d568/aW1hZ2UucG5n\" alt=\"\" height=\"390\" width=\"730\">"
+					},
+					"response": []
+				},
+				{
+					"name": "clear",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjYwOTMyNTIsImV4cCI6MTcyNjY5ODA1Mn0.3mlwo3RjOKkovw-zIKM5kwsRzF3D8_grXgocM2kCsPY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"plant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/favorite/clear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"favorite",
+								"clear"
+							]
+						},
+						"description": "StartFragmentRemoves all items from the authenticated user's favorites list. This clears all plants, soils, water & fertilizers, and products from their respective categories within their favorites document.EndFragment  \n  \n\nStartFragment\n\n**Response:**\n\n- **Status:**\n    \n    - 200 (OK): Success\n        \n    - 404 (Not Found): User favorites not found for the authenticated user\n        \n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjYwOTMyNTIsImV4cCI6MTcyNjY5ODA1Mn0.3mlwo3RjOKkovw-zIKM5kwsRzF3D8_grXgocM2kCsPY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"plants\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/favorite/668ea7e2d99e7e36d4d89dfe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"favorite",
+								"668ea7e2d99e7e36d4d89dfe"
+							]
+						},
+						"description": "StartFragment Removes an item from the authenticated user's favorites list. You can remove items of different types (plants, soils, water & fertilizers, and products) from their respective lists within their favorites.EndFragment\n\nStartFragment\n\n**Response:**\n\n- **Status:**\n    \n    - 200 (OK): Success\n        \n    - 400 (Bad Request): Favorite list is empty or invalid request body\n        \n    - 404 (Not Found): User favorites not found for the authenticated user\n        \n    - 409 (Conflict): Item not found in the user's favorites for the specified type\n        \n\nEndFragment\n\nStartFragment\n\n**Response:**\n\n- **Status:**\n    \n    - 200 (OK): Success\n        \n    - 400 (Bad Request): Favorite list is empty or invalid request body\n        \n    - 404 (Not Found): User favorites not found for the authenticated user\n        \n    - 409 (Conflict): Item not found in the user's favorites for the specified type\n        \n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhkYWRkYTc3ZWNhZGE1MjM5YjcxNiIsImZ1bGxOYW1lIjoiQWxpIEFsbGFtIiwiZW1haWwiOiJhbGxhbTk4LmFsaUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjYwOTMyNTIsImV4cCI6MTcyNjY5ODA1Mn0.3mlwo3RjOKkovw-zIKM5kwsRzF3D8_grXgocM2kCsPY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/favorite/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"favorite",
+								""
+							]
+						},
+						"description": "StartFragment\n\n- **Authentication:** Required (usually JWT token in the token header)\n    \n\nEndFragment\n\nStartFragmentRetrieves the favorite items for the authenticated user. The response includes the user's favorites across different categories (plants, soils, water & fertilizers, and products).EndFragment\n\nSuccess Response Ex.\n\n<img src=\"https://content.pstmn.io/d1cbfd60-01b6-4d9c-b641-73f87ff3ab55/aW1hZ2UucG5n\" alt=\"\" height=\"379\" width=\"736\">"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

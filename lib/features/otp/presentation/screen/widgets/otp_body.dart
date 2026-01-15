@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greenify_app/core/helper/app_images.dart';
+import 'package:greenify_app/core/constants/app_images.dart';
 import 'package:greenify_app/core/theme/app_color.dart';
 import 'package:greenify_app/core/theme/app_text_style.dart';
 import 'package:greenify_app/core/theme/font_family_helper.dart';
@@ -60,7 +60,7 @@ class OtpBody extends StatelessWidget {
               text: Text(
                 buttonText,
                 style: AppTextStyle.font20WhiteMedium.copyWith(
-                  // fontSize: 24,
+                  fontSize: 24,
                   fontFamily: FontFamilyHelper.interFont,
                 ),
               ),

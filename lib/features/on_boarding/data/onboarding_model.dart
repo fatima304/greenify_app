@@ -1,4 +1,4 @@
-import 'package:greenify_app/core/helper/app_images.dart';
+import 'package:greenify_app/core/constants/app_images.dart';
 
 class OnboardingModel {
   final String image;

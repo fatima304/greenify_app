@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greenify_app/core/helper/app_icon.dart';
+import 'package:greenify_app/core/constants/app_icon.dart';
 import 'package:greenify_app/features/login/presentation/screen/widgets/log_item.dart';
 
 class LogsList extends StatelessWidget {
